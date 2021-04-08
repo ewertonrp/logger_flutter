@@ -101,8 +101,6 @@ class AnsiParser {
 
   Color getColor(int colorCode, bool foreground) {
     switch (colorCode) {
-      case 0:
-        return foreground ? Colors.black : Colors.transparent;
       case 12:
         return dark ? Colors.lightBlue[300] : Colors.indigo[700];
       case 208:
@@ -111,6 +109,8 @@ class AnsiParser {
         return dark ? Colors.red[300] : Colors.red[700];
       case 199:
         return dark ? Colors.pink[300] : Colors.pink[700];
+      default:
+        return foreground ? Colors.black : Colors.transparent;
     }
   }
 

@@ -11,5 +11,5 @@ dependencies:
   flutter:
     sdk: flutter
 
-  logger: ">=0.7.0 <1.0.0"
+  logger: ">=1.0.0"
   sensors: ^0.4.2+4
